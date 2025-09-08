@@ -1,34 +1,38 @@
 # ANALISIS BIOGRAFI
- 1. Bagian awal html
-html
+1. Bagian awal html
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portofolio Saya</title>
-  Bagian ini adalah struktur dasar HTML. Tag <html lang="id"> menunjukkan bahasa utama halaman adalah Bahasa Indonesia. Pada <head> terdapat pengaturan viewport agar halaman responsif, title untuk memberi judul tab browser, serta link ke Font Awesome agar bisa menggunakan ikon media sosial seperti Instagram, TikTok, dan GitHub.
+
+Bagian ini adalah struktur dasar HTML. Tag <html lang="id"> menunjukkan bahasa utama halaman adalah Bahasa Indonesia. Pada <head> terdapat pengaturan viewport agar halaman responsif, title untuk memberi judul tab browser, serta link ke Font Awesome agar bisa menggunakan ikon media sosial seperti Instagram, TikTok, dan GitHub.
 
 2. Bagian Css
 ```html
-.style
+<style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body,html{height:100%;overflow:hidden;background:#f0f8ff}
 .slide{width:100%;height:100vh;position:absolute;top:0;left:100%;transition:0.8s}
- .show{left:0}
+.show{left:0}
+</style>
 ```
+
 Kode di atas mengatur gaya dasar halaman: semua elemen diberi margin dan padding nol, font bawaan Arial, dan box-sizing: border-box agar perhitungan lebar lebih konsisten. Latar belakang halaman berwarna biru muda (#f0f8ff) dengan tinggi penuh 100%.
 
 ```html
 .slide{width:100%;height:100vh;position:absolute;top:0;left:100%;transition:0.8s}
 .show{left:0}
 ```
+
 Bagian ini mengatur animasi slide antar halaman. Default setiap slide berada di luar layar (left:100%), dan akan muncul ke layar jika diberi class .show.
 
 ```html
 .cover,.content{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%}
 .cover{background:#6aaef7;color:#fff;text-align:center}
 ```
+
 .cover digunakan untuk slide pertama (halaman pembuka). Tampilannya biru dengan teks putih, konten diposisikan di tengah secara vertikal dan horizontal.
 
 ```html
@@ -38,6 +42,7 @@ border-radius:50%;border:5px solid #fff;
 animation:float 3s ease-in-out infinite;
 }
 ```
+
 Foto profil berbentuk lingkaran (border-radius:50%) dengan ukuran tetap 180×180 piksel, diberi border putih, dan animasi float membuat gambar naik-turun perlahan sehingga lebih hidup.
 
 ```html
@@ -45,6 +50,7 @@ Foto profil berbentuk lingkaran (border-radius:50%) dengan ukuran tetap 180×180
 background:#fff;color:#69aef8;font-weight:bold;cursor:pointer;transition:.3s}
 .btn:hover{background:#e0e0e0}
 ```
+
 Tombol didesain dengan warna dasar putih, teks biru, bentuk oval, dan saat diarahkan kursor berubah warna menjadi abu-abu muda.
 
 ```html
@@ -60,7 +66,7 @@ Slide kedua menggunakan class .content. Latar belakang putih, teks abu-abu gelap
 h1{text-align:center;color:#1e90ff;margin-bottom:10px;font-size:20px}
 h2{background:#1e90ff;color:#fff;padding:6px 12px;border-radius:8px;margin-bottom:8px;font-size:16px}
 ```
-Judul utama <h1> diberi warna biru (#1e90ff) dan rata tengah, sedangkan subjudul <h2> memiliki latar biru dengan teks putih dan sudut melengkung.
+Judul utama diberi warna biru (#1e90ff) dan rata tengah, sedangkan subjudul memiliki latar biru dengan teks putih dan sudut melengkung.
 
 ```html
 .grid{
@@ -115,7 +121,7 @@ Slide pertama menampilkan foto profil Ainil Magsurah, nama lengkap, dan sebuah t
 <div class="content">
 <h1>TENTANG SAYA</h1>
 <p style="text-align:center;font-size:14px;margin-bottom:10px;">
-Halo, nama saya Ainil Magsurah, biasa dipanggil Ainil/Aiy.Saya seorang mahasiswi Universitas Negeri Makassar.<br>
+Halo, nama saya Ainil Magsurah, biasa dipanggil Ainil/Aiy. Saya seorang mahasiswi Universitas Negeri Makassar.<br>
 Saya memiliki pengalaman organisasi, salah satunya Palang Merah Remaja.<br>
 Hobi saya memasak, traveling, dan mengeksplor tempat-tempat baru seperti cafe dan tempat wisata alam.
 </p>
